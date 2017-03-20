@@ -1,0 +1,21 @@
+p { font-size: 18px;
+    width: 300px;
+    padding: 25px 90px 25px 20px;
+    text-align: left;
+    border-style: solid;
+    border-size: 1px;
+    border-bottom: 0px;
+    margin: 0px;
+}
+
+p:first-child{
+    border-top: 0px;
+}
+
+p:last-child{
+    border-bottom: 0px;
+}
+
+p:hover {
+  background-color: #ec6842;
+}

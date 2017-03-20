@@ -1,0 +1,31 @@
+div {
+      text-align: center;
+      font-size: 36px;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      width: 380px;
+      margin-color: #fff;
+}
+.bigbox {
+  width: 380px;
+  height: 515px;
+  align: center;
+  border: 15px solid;
+  border-color: #4285f4;
+}
+.bigbox > div {
+      padding: 50px 0px 0px 0px;
+      height: 80px;
+}
+.box1 {
+      background-color: #e67676;
+}
+.box2 {
+    background-color: #e67676;
+}
+.box3 {
+    background-color: #a9e6e6;
+}
+.box4 {
+    background-color: #a9e6e6;
+}

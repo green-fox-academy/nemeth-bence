@@ -1,0 +1,12 @@
+div{
+      background-color: rgb(14, 145, 161);
+      font-size: 36px;
+      color: #066769;
+      font-family: 'Roboto', sans-serif;
+      padding: 16px 0px 85px 16px;
+      width: 330px;
+      border: 5px solid;
+      border-color: rgb(125, 206, 148);
+      margin: 15px;
+      margin-color: #fff;
+}

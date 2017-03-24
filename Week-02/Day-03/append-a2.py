@@ -4,7 +4,7 @@
 
 nimals = ["kuty", "macs", "cic"]
 
-for i in range(0, 3):
-    nimals[i] += 'a'
+for x in range(0, 3):
+    nimals[x] += 'a'
 
 print (nimals)

@@ -11,3 +11,5 @@ def decrypt(duplicated_chars):
     return text_decrypt
 
 print(decrypt(text))
+
+fr = close

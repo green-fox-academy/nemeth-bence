@@ -11,7 +11,7 @@ canvas.pack()
 # draw 3 squares with that function.
 
 def center_squares(size):
-    draw = canvas.create_rectangle(150, 150, size, size, width=3)
+    draw = canvas.create_rectangle(150 - size, 150 - size, 150 + size, 150 + size, width=3)
     return draw
 
 center_squares(100)

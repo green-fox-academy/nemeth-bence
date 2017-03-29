@@ -11,11 +11,22 @@ canvas.pack()
 # create a loop that fills the canvas with rainbow colored squares.
 
 def center_squares(size, color):
-    draw = canvas.create_rectangle(150, 150, 150 + size, 150 + size, fill=color, width=3)
-    return draw
+    size = size/2
+    draw = canvas.create_rectangle(150 - size, 150 - size, 150 + size, 150 + size, fill=color, width=3)
 
-center_squares(100, 'red')
-center_squares(75, 'green')
-center_squares(50, 'blue')
+    #return draw
+
+size = 300
+color = ['blue', 'green', 'yellow', 'pink', 'white', 'purple', 'cyan']
+step = size/len(color)
+
+for i in range(len(color)):
+    center_squares(size, color[i])
+    size -= step
+
+
+
+
+#center_squares(100, 'red')
 
 root.mainloop()

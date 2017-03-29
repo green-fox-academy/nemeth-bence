@@ -7,8 +7,8 @@ canvas.pack()
 
 
 def three_line(x,y):
-    id = canvas.create_line(x, y, 150, 150, fill="#476042", width=3)
-    return id
+    line = canvas.create_line(x, y, 150, 150, fill="#476042", width=3)
+    return line
 
 three_line(50, 50)
 three_line(250, 50)

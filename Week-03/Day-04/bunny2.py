@@ -6,9 +6,9 @@
 def bunny(n):
     if n == 1:
         return 2
-    elif n == 0:
-        return 3
+    elif n % 2 == 0:
+        return 3 + bunny(n-1)
     else:
-        return 2 + bunny(n/2)
+        return 2 + bunny(n-1)
 
-print (bunny(5))
+print (bunny(8))

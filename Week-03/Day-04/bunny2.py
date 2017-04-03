@@ -11,4 +11,4 @@ def bunny(n):
     else:
         return 2 + bunny(n-1)
 
-print (bunny(8))
+print (bunny(6))

@@ -20,9 +20,8 @@ class Counter:
         self.value += number
 
     def get(self):
-        return self.value
         print(self.value)
-
+        return self.value
 
     def reset(self):
         self.value = self.value_basic

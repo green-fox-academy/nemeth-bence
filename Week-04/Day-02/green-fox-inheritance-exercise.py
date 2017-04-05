@@ -70,7 +70,7 @@ class LagopusClass():
         self.mentors.append(Mentor)
 
     def info(self):
-        print("Lagopus " + str(self.class_name) + " class has" + str(len(self.students)) + " students and " + str(len(self.mentors)) + " mentors.")
+        print("Lagopus " + str(self.class_name) + " class has " + str(len(self.students)) + " students and " + str(len(self.mentors)) + " mentors.")
 
 people = []
 

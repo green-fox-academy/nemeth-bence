@@ -18,16 +18,16 @@ class Apple():
         self.B = B
         for x in A:
             if x in A:
-                A["x"] += 1
+                A[x] += 1
             else:
-                A["x"] = 1
+                A[x] = 1
         return A
 
         for x in B:
             if x in B:
-                B["x"] += 1
+                B[x] += 1
             else:
-                B["x"] = 1
+                B[x] = 1
         return B
 check = Apple()
 check.anagram("tok", "fent")

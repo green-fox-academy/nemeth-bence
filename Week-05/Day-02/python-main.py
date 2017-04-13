@@ -9,27 +9,32 @@ class GameObject():
         #self.position = position
         self.floor_image = PhotoImage(file = 'assets\Floor.png')
         self.wall_image = PhotoImage(file = 'assets\Wall.png')
+
         # self.draw_image(2, 5, self.floor_image)
         # self.draw_image(6, 4, self.wall_image)
 
 
     def draw_image(self, x, y, tile):
-        self.image = canvas.create_image(x*self.image_size, y*self.image_size, image = tile)
+        id = canvas.create_image(x*self.image_size, y*self.image_size, anchor = NW, image = tile)
+        return id
 
 class Character():
 
     def __init__(self):
-        self.hero_image = PhotoImage(file = 'assets\hero-down.png')
-        self.hero_x = 36
-        self.hero_y = 36
-        game.draw_image(self.hero_x, self.hero_y, self.hero_image)
+        self.hero_image = PhotoImage(file = 'hero-down.gif')
+        self.hero_x = 0
+        self.hero_y = 0
+        self.hero = game.draw_image(self.hero_x, self.hero_y, self.hero_image)
 
+    def move(self):
+        canvas.move(self.hero, game.image_size, game.image_size)
+
+        print('hello')
         #self.hero_image = PhotoImage(file = 'assets\hero_down.png')
 
     # def get_position(self, x, y):
     #     self.position = self.canvas.create_image(x*image_size, y*image_size, image = self.photo)
 
-    # def move(self):
 
 # class Wall(GameObject):
 #     def __init__(self,root,canvas,background="wall.gif"):
@@ -60,9 +65,9 @@ class GameMap:
         for i in range(len(self.game_area)):
             for j in range(len(self.game_area[i])):
                 if self.game_area [i][j] == 0:
-                    game.draw_image(j + 0.5, i + 0.5, game.floor_image)
+                    game.draw_image(j, i, game.floor_image)
                 else:
-                    game.draw_image(j + 0.5, i + 0.5, game.wall_image)
+                    game.draw_image(j, i, game.wall_image)
 
 
 
@@ -88,6 +93,7 @@ game = GameObject()
 map = GameMap ()
 map.create_map()
 hero = Character()
+hero.move()
 
 canvas.pack()
 

@@ -9,12 +9,12 @@
 # - Print this two dimensional list to the output
 
 def matrix(size):
-    oszlop = []
+    column = []
     for i in range(size):
-        oszlop = [0] * size
-        oszlop[i] = 1
+        column = [0] * size
+        column[i] = 1
 
-        print(oszlop)
+        print(column)
     return
 
 

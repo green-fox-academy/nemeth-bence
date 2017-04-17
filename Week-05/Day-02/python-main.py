@@ -33,6 +33,22 @@ class Character():
 
         canvas.move(self.hero, x, y)
 
+    def on_key_press(press):
+
+        if press.keycode == 38:
+
+        elif press.keycode == 40:
+
+        elif press.keycode == 39:
+
+        elif press.keycode == 37:
+
+        # and lower if the key that was pressed the down arrow
+        # draw the box again in the new position
+        box.draw(canvas)
+
+        canvas.bind("<KeyPress>", on_key_press)
+
     # def get_position(self, x, y):
     #     self.position = self.canvas.create_image(x*image_size, y*image_size, image = self.photo)
 

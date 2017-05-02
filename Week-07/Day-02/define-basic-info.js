@@ -14,4 +14,4 @@ var status = false;
 console.log(name);
 console.log(age);
 console.log(height + " meter");
-console.log("Married " + status);
+console.log("Married: " + status);

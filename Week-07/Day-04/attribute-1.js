@@ -11,7 +11,7 @@ console.log('image URL:', bestEver.getAttribute('src'));
 bestEver.setAttribute('src', 'file:///C:/Users/Bence/Desktop/Zodiac-10-1.jpg');
 
 var bestEva = document.querySelector('a');
-console.log('image URL:', bestEva.getAttribute('href'));
+console.log('page URL:', bestEva.getAttribute('href'));
 bestEva.setAttribute('href', 'https://www.greenfoxacademy.com/');
 
 console.log(document.querySelector('.this-one'));

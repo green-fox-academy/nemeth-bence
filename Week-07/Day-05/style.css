@@ -1,0 +1,14 @@
+.brand_story { width: 100%; height: 100%; }
+.brand_story .swiper-wrapper { width: 100%; height: 100%; }
+.brand_story > .swiper-pagination-bullets { right: 20px; }
+.brand_story > .swiper-pagination-bullets .swiper-pagination-bullet { margin: 10px 0; }
+.brand_story .swiper-pagination-bullet { opacity: 1; background-color: #a1a09f; }
+.brand_story .swiper-pagination-bullet-active { background-color: #ac0548; }
+.brand_story .media { position: relative; width: 100%; height: 100%; background-image: url(../images/brandstory/thumb.jpg); background-repeat: no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; -webkit-background-size: cover; background-size: cover; background-position: center center; }
+.brand_story .media .inner { display: table; position: absolute; top: 0; left: 50%; margin-left: -40%; width: 80%; height: 100%; } /*2차 수정*/
+.brand_story .media p { display: table-cell; vertical-align: top; text-align: center; color: #fff; }
+.brand_story .media p strong { display: block; margin-bottom:60px;text-align: center; opacity: 0.8; font-size: 4.2em; font-weight:normal; white-space: pre-line; margin-top: 25.13089%; font-family: "Gotham M";text-transform:uppercase; } /*2차 수정*/
+.brand_story .media p strong br, .brand_story .media p em br{display:none;}
+.brand_story .media p em { display: block; text-align: center; padding-top: 20px; opacity: 0.8; font-size: 2.2em; line-height: 1.5; font-family: "Gotham B";font-weight:normal;text-transform:uppercase;letter-spacing:-1px; } /*2차 수정*/
+.brand_story .media p .media_play { position: relative; top: inherit; left: inherit; margin: 9.5288% 0 0; }
+.brand_story .media .bg_movie_flv *{width:100% !important;}

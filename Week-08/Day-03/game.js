@@ -54,7 +54,7 @@ function buyLollypop() {
 }
 
 function makeCandyRain() {
-  speed = speed/10;
+  speed = 1000/speed;
 }
 
 createCandiesButton.addEventListener('click', createCandy);

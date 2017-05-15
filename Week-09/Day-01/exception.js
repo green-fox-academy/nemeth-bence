@@ -4,7 +4,7 @@
 // arguments, throw the right error and write it to the console.
 // It should add the strings too if the arguments are appropriate.
 
-let  addString = function(str1, str2, printStr){
+let addString = function(str1, str2, printStr){
     if (typeof str1 !== 'string') {
         throw new Error('"str1" is not a string');
     } else if (typeof str2 !== 'string') {

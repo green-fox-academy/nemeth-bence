@@ -1,6 +1,6 @@
 let ImgContainer = document.querySelector('.thumbnail__container');
 
-var url = 'http://api.giphy.com/v1/gifs/search?q=slipknot&api_key=dc6zaTOxFJmzC';
+var url = 'http://api.giphy.com/v1/gifs/search?q=book&api_key=dc6zaTOxFJmzC&limit=60';
 
 function load(url, callback) {
   var xhr = new XMLHttpRequest();
@@ -21,7 +21,7 @@ function load(url, callback) {
 load(url, function(response){console.log(response)});
 
 function buildIMG (responseFromServer){
-    for (let i = 0; i < 16; i++){
+    for (let i = 29; i < 45; i++){
         let liElement = document.createElement('li');
         liElement.style.backgroundImage = 'url(' + responseFromServer.data[i].images.downsized_still.url + ')';
         liElement.addEventListener('mouseover', function () {
@@ -33,6 +33,7 @@ function buildIMG (responseFromServer){
         ImgContainer.appendChild(liElement);
     }
 }
+
 
 function buildImgHover () {
     console.log()

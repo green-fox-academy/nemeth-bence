@@ -22,7 +22,7 @@ h1 {
 
 #searchbar {
     height: 5vw;
-    background: red;
+    background: #337FFF;
 }
 
 .thumbnail__container {
@@ -37,7 +37,7 @@ li {
     list-style: none;
     background-size: cover;
     background-position: center;
-    border: 1.2vh solid #000;
+    border: 0.7vh solid #000;
     margin: 1vw;
     flex: 1 1 20%;
     height: 11vw;

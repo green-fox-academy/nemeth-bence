@@ -23,7 +23,7 @@ app.get('/listbooks', function get(req, res) {
     var HTML = "<ul>"
     conn.query(querybooks, function(err,rows){
         if(err) {
-            console.log("PARA", err);
+            console.log("Something went wrong.", err);
         } else {
             rows.forEach(row => {
                 HTML += "<li>" + row.book_name + "</li>";
@@ -61,7 +61,7 @@ if ((category) || (publisher) || (plt) || (pgt)){
 
     conn.query(queryfilter, function(err,rows){
         if(err) {
-            console.log("PARA", err);
+            console.log("Something went wrong.", err);
         } else {
           var HTML = "<table><tr><th>Book title</th><th>Authors name</th><th>Category</th><th>Publisher name</th><th>Price</th></tr>"
             rows.forEach(row => {

@@ -5,7 +5,7 @@
 // Every rectangle should have a method called getArea() that returns its area
 // Every rectangle should have a method called getCircumference() that returns its circumference
 
-function Rectangles(aSide, bSide) {
+function Rectangles(a, b) {
     this.getArea = function () {
         console.log(a * b);
     };
